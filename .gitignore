@@ -1,0 +1,7 @@
+node_modules/
+
+# Visual Studio
+.vs/
+*.sln
+*.njsproj
+typings/
