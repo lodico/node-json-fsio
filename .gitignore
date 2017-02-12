@@ -1,10 +1,9 @@
+# npm
 node_modules/
-
-# Visual Studio
-.vs/
-*.sln
-*.njsproj
-typings/
 
 # nyc
 .nyc_output/
+*.log
+
+# coverage
+coverage/
