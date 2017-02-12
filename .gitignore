@@ -1,9 +1,11 @@
+# General
+*.log
+
 # npm
 node_modules/
 
 # nyc
 .nyc_output/
-*.log
 
 # coverage
 coverage/
