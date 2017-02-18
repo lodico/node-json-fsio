@@ -1,0 +1,57 @@
+{
+  "name": "json-persist",
+  "version": "0.0.0",
+  "description": "Persist JSON objects with built-in error handling.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lodicolo/node-json-persist.git"
+  },
+  "keywords": [
+    "read",
+    "write",
+    "file",
+    "json",
+    "fs",
+    "fs-extra",
+    "persist"
+  ],
+  "author": "Robert Lodico <lodico.rj@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lodicolo/node-json-persist/issues"
+  },
+  "homepage": "https://github.com/lodicolo/node-json-persist#readme",
+  "engines": {
+    "node": ">=4"
+  },
+  "dependencies": {
+    "module-export": "*",
+    "strip-bom": "^3.0.0"
+  },
+  "optionalDependencies": {
+    "graceful-fs": "^4.1.11"
+  },
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "eslint-plugin-react": "^6.9.0",
+    "mkdirp": "^0.5.1",
+    "mock-fs": "^3.8.0",
+    "nyc": "^10.1.2",
+    "rimraf": "^2.5.0",
+    "xo": "~0.17.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "xo index.js",
+    "report": "nyc report --reporter=html",
+    "test": "npm run lint && npm run unit && npm run report",
+    "test-lint": "xo test/test.js test/*.js",
+    "unit": "npm run test-lint && nyc ava"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 4,
+    "semicolon": true
+  }
+}
